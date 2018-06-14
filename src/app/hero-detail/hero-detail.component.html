@@ -1,7 +1,13 @@
 <h2>Hero Detail</h2>
 <h3><i>A FormGroup with multiple FormControls</i></h3>
+
+Search:
+<input type="text" name="searchBox" [(ngModel)]="searchText" >
+<br>
+<br>
+
 <form [formGroup]="heroForm">
-  <div class="form-group">
+  <div class="form-group" [hidden]="'Name' == searchText">
     <label class="center-block">Name:
       <input class="form-control" formControlName="name">
     </label>

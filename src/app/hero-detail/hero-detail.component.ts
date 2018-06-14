@@ -10,6 +10,7 @@ import { states } from '../data-model';
 })
 export class HeroDetailComponent implements OnInit {
 
+  searchText: string;
   heroForm: FormGroup;
   states = states;
 
